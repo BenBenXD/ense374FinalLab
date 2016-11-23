@@ -20,15 +20,27 @@ private String foodType;
 public Location location;
 private boolean alive;
 private boolean hunger; 
-            
+private Field field;         
 public void Caterpillar(int age, Location location, boolean hunger){
     
 }
 public void death(){
-    
+  alive = false;
+if(location != null)
+{
+field.clear(location);
+location = null;
+field=null;
+}   
 }
 public void hunger(){
     
+}
+public void increaseAge(){
+age++;
+if(age > MAX_AGE) {
+death();
+}
 }
 public Location location(){
     

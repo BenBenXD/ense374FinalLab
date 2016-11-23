@@ -21,7 +21,10 @@ public void grass(int age, Location location){
     
 }
 public void increaseAge(){
-    
+ age++;
+if(age > MAX_AGE) {
+death();
+}   
 }
 public void death(){
     

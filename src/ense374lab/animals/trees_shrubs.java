@@ -21,7 +21,10 @@ public void trees_shrubs(int age, Location location){
     
 }
 public int increaseAge(){
-    
+ age++;
+if(age > MAX_AGE) {
+death();
+}   
 }
 public void death(){
     
