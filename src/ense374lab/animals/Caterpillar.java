@@ -10,5 +10,36 @@ package ense374lab.animals;
  * @author BenBen
  */
 public class Caterpillar {
+private static final int MAX_AGE;
+private static final int BREED;
+private static final int MAX_HUNGER;
+private static final int MAX_BIRTHS;
+ 
+public int age;
+private String foodType;
+public Location location;
+private boolean alive;
+private boolean hunger; 
+            
+public void Caterpillar(int age, Location location, boolean hunger){
     
+}
+public void death(){
+    
+}
+public void hunger(){
+    
+}
+public Location location(){
+    
+}
+public boolean checkBreed(){
+    
+}
+public int breed(){
+    
+}
+public void move(){
+    
+}
 }
