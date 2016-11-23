@@ -9,7 +9,7 @@ package ense374lab.animals;
  *
  * @author BenBen
  */
-public class trees_shrubs {
+public class grass {
 private static final int MAX_AGE;
  
 public int age;
@@ -17,10 +17,10 @@ public Location location;
 private boolean alive;
 private boolean hunger; 
             
-public void trees_shrubs(int age, Location location){
+public void grass(int age, Location location){
     
 }
-public int increaseAge(){
+public void increaseAge(){
     
 }
 public void death(){
