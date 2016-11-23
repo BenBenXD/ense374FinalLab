@@ -15,7 +15,8 @@ private static final int MAX_AGE;
 public int age;
 public Location location;
 private boolean alive;
-private boolean hunger; 
+private boolean hunger;
+private Field field;
             
 public void grass(int age, Location location){
     
@@ -29,8 +30,15 @@ death();
 public void death(){
     
 }
-public Location location(){
-    
+public void setlocation(Location newLo){
+   if(location != null) {
+field.clear(location);
+}
+location = newLo;
+field.place(this, newLo); 
+}
+public Location getlocation(){
+    return location;
 }
     
 }
