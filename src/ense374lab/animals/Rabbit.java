@@ -37,7 +37,14 @@ field=null;
 public void hunger(){
     
 }
-public Location location(){
+public void setlocation(Location newLo){
+   if(location != null) {
+field.clear(location);
+}
+location = newLo;
+field.place(this, newLo); 
+}
+public Location getlocation(){
     return location;
 }
 public void increaseAge(){

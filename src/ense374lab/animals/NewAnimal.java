@@ -50,8 +50,15 @@ field=null;
 public void breed(){
     
 }
-public void location(){
-    
+public void setlocation(Location newLo){
+   if(location != null) {
+field.clear(location);
+}
+location = newLo;
+field.place(this, newLo); 
+}
+public Location getlocation(){
+    return location;
 }
 public void Hunger(){
     
