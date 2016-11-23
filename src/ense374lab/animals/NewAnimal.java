@@ -10,15 +10,17 @@ package ense374lab.animals;
  * @author BenBen
  */
 public class NewAnimal {
+    private static final int MAX_AGE;
     private String  name;
     private String type;
     private int age;
+    private boolean alive;
     public Location location;
     public boolean hunger;
     public String foodType;
+    private Field field;
     
-    
-public NewAnimal(String n, int ag, void breed, void death, void location, void hunger){
+public void NewAnimal(String n, int ag, void breed, void death, Location location, void hunger){
     
 }
 public String name(){
@@ -31,10 +33,19 @@ public int age(int a){
     
 }
 public void increaseInAge(){
-    
+ age++;
+if(age > MAX_AGE) {
+death();
+}   
 }
 public void death(){
-    
+alive = false;
+if(location != null)
+{
+field.clear(location);
+location = null;
+field=null; 
+}
 }
 public void breed(){
     
