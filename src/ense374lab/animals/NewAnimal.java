@@ -66,9 +66,6 @@ public void Hunger(){
 public void hunt(){
     
 }
-public String Food(){
-    
-}
 public int addAnimal(){
     
 }

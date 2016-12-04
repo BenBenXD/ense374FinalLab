@@ -11,9 +11,7 @@ package ense374lab.animals;
  */
 public class Rabbit {
 private static final int MAX_AGE;
-private static final int BREED;
 private static final int MAX_HUNGER;
-private static final int MAX_BIRTHS;
  
 public int age;
 private String foodType;
@@ -53,12 +51,6 @@ if(age > MAX_AGE) {
 death();
 }
 
-}
-public boolean checkBreed(){
-    
-}
-public int breed(){
-    
 }
 public void move(){
     
