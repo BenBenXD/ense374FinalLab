@@ -9,9 +9,9 @@ package ense374lab.animals;
  *
  * @author BenBen
  */
-public class Fox {
-private static final int MAX_AGE;
-private static final int MAX_HUNGER;
+public class Fox extends NewAnimal{
+private static final int MAX_AGE= 39;
+private static final int MAX_HUNGER=16;
 
  
 public int age;
@@ -35,12 +35,12 @@ field=null;
 public void hunger(){
     
 }
-public void setlocation(Location newLo){
+public void setlocation(Location newLocation){
    if(location != null) {
 field.clear(location);
 }
-location = newLo;
-field.place(this, newLo); 
+location = newLocation;
+field.place(this, newLocation); 
 }
 public Location getlocation(){
     return location;

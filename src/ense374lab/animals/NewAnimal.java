@@ -9,8 +9,8 @@ package ense374lab.animals;
  *
  * @author BenBen
  */
-public class NewAnimal {
-    private static final int MAX_AGE;
+public class NewAnimal extends World {
+    private static final int MAX_AGE=50;
     private String  name;
     private String type;
     private int age;
@@ -20,7 +20,7 @@ public class NewAnimal {
     public String foodType;
     private Field field;
     
-public void NewAnimal(String n, int ag, void breed, void death, Location location, void hunger){
+public void NewAnimal(String name, int age, void death, Location location, void hunger){
     
 }
 public String name(){
@@ -50,12 +50,12 @@ field=null;
 public void breed(){
     
 }
-public void setlocation(Location newLo){
+public void setlocation(Location newLocation){
    if(location != null) {
 field.clear(location);
 }
-location = newLo;
-field.place(this, newLo); 
+location = newLocation;
+field.place(this, newLocation); 
 }
 public Location getlocation(){
     return location;
@@ -66,13 +66,8 @@ public void Hunger(){
 public void hunt(){
     
 }
-public int addAnimal(){
+public int addanimal(){
     
 }
-public list addAnimalList(){
-    
-}
-    
-    
     
 }

@@ -9,9 +9,9 @@ package ense374lab.animals;
  *
  * @author BenBen
  */
-public class Bluejay {
-private static final int MAX_AGE;
-private static final int MAX_HUNGER;
+public class Bluejay extends NewAnimal {
+private static final int MAX_AGE= 20;
+private static final int MAX_HUNGER=5;
  
 public int age;
 private String foodType;
@@ -35,12 +35,12 @@ field=null;
 public void hunger(){
     
 }
-public void setlocation(Location newLo){
+public void setlocation(Location newLocation){
    if(location != null) {
 field.clear(location);
 }
-location = newLo;
-field.place(this, newLo); 
+location = newLocation;
+field.place(this, newLocation); 
 }
 public Location getlocation(){
     return location;

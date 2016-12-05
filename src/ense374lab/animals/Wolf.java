@@ -9,9 +9,9 @@ package ense374lab.animals;
  *
  * @author BenBen
  */
-public class Wolf {
-private static final int MAX_AGE;
-private static final int MAX_HUNGER;
+public class Wolf extends NewAnimal{
+private static final int MAX_AGE=46;
+private static final int MAX_HUNGER=20;
  
 public int age;
 private String foodType;
@@ -40,12 +40,12 @@ if(age > MAX_AGE) {
 death();
 }
 }
-public void setlocation(Location newLo){
+public void setlocation(Location newLocation){
    if(location != null) {
 field.clear(location);
 }
-location = newLo;
-field.place(this, newLo); 
+location = newLocation;
+field.place(this, newLocation); 
 }
 public Location getlocation(){
     return location;
